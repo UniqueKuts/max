@@ -5,70 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maxon Healthcare | Empowering Health, Everywhere</title>
   <style>
-    :root {
-      --main-color: #ADD8E6;
-      --header-background: var(--main-color);
-      --header-color: #fff;
-      --nav-background: var(--main-color);
-      --nav-color: #fff;
-      --footer-background: var(--main-color);
-      --footer-color: #fff;
-      --button-background: var(--main-color);
-      --button-color: #fff;
-    }
-
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f4f4f4;
     }
-
     header {
-      background-color: var(--header-background);
-      color: var(--header-color);
+      background-color: #333;
+      color: #fff;
       text-align: center;
       padding: 20px;
     }
-
     nav ul {
       list-style-type: none;
       padding: 0;
       margin: 0;
       text-align: center;
-      background-color: var(--nav-background);
+      background-color: #333;
+      padding: 10px;
     }
-
     nav ul li {
       display: inline;
       margin-right: 20px;
     }
-
     nav ul li a {
-      color: var(--nav-color);
+      color: #fff;
       text-decoration: none;
     }
-
     main {
       padding: 20px;
     }
-
     section {
       margin-bottom: 40px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
     }
-
     h2 {
-      color: var(--main-color);
+      color: #333;
     }
-
     form {
       margin-top: 20px;
     }
-
     label {
       display: block;
       margin-bottom: 5px;
+      color: #333;
     }
-
     input[type="text"],
     input[type="email"],
     textarea {
@@ -79,19 +63,20 @@
       border-radius: 5px;
       box-sizing: border-box;
     }
-
     button {
       padding: 10px 20px;
-      background-color: var(--button-background);
-      color: var(--button-color);
+      background-color: #333;
+      color: #fff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
-
+    button:hover {
+      background-color: #555;
+    }
     footer {
-      background-color: var(--footer-background);
-      color: var(--footer-color);
+      background-color: #333;
+      color: #fff;
       text-align: center;
       padding: 20px;
       position: fixed;
@@ -144,7 +129,7 @@
   <section id="contact">
     <h2>Contact Us</h2>
     <p>Provide contact information for Maxon Healthcare, including address, phone number, and email address.</p>
-    <form action="mailto:info@maxonhealthcare.com" method="post" enctype="text/plain">
+    <form id="contactForm">
       <label for="name">Your Name:</label>
       <input type="text" id="name" name="name" required>
       <label for="email">Your Email:</label>
@@ -161,13 +146,14 @@
 </footer>
 
 <script>
-  // JavaScript to change CSS variables dynamically
-  const themeToggle = document.querySelector('#theme-toggle');
-
-  themeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark-theme');
-  });
-</script>
-
-</body>
-</html>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    
+    // You can send this data to a server or database using AJAX or fetch
+    // For example:
+    /*
+    fetch('/submit_form',
