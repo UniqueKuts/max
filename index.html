@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxon Healthcare</title>
+    <title>Maxon Healthcare - On-Site Medical Camps</title>
+    <style>
+        /* CSS for hiding/showing sections */
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <img src="maxon healthcare.PNG" alt="Maxon Healthcare Logo" class="logo">
+    <img src="your-logo.png" alt="Maxon Healthcare Logo" class="logo">
     <nav>
         <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#" id="showVendors">Vendors</a></li>
+            <li><a href="#" id="showClients">Our Clients</a></li>
         </ul>
     </nav>
 </header>
@@ -36,6 +44,16 @@
         <p>Maxon Healthcare is a leading provider of comprehensive medical services, specializing in onsite healthcare solutions across India. With a focus on empowering communities, we conduct medical camps nationwide, offering advanced radiology and laboratory services. Our experienced team ensures quality care, serving over 100 national companies and acting as vendors for 200 healthcare facilities. Committed to accessibility and affordability, we prioritize preventive healthcare and collaborate with partners to make a meaningful impact on public health.</p>
     </section>
 
+    <section id="vendors" class="hidden">
+        <h2>Vendors</h2>
+        <p>Vendor details go here...</p>
+    </section>
+
+    <section id="clients" class="hidden">
+        <h2>Our Clients</h2>
+        <p>Client details go here...</p>
+    </section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <p>For inquiries and appointments, please fill out the form below:</p>
@@ -54,6 +72,19 @@
 <footer>
     <p>&copy; 2024 Maxon Healthcare. All rights reserved.</p>
 </footer>
+
+<script>
+    // JavaScript to toggle visibility of vendor and client sections
+    document.getElementById("showVendors").addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("vendors").classList.toggle("hidden");
+    });
+
+    document.getElementById("showClients").addEventListener("click", function(event) {
+        event.preventDefault();
+        document.getElementById("clients").classList.toggle("hidden");
+    });
+</script>
 
 </body>
 </html>
