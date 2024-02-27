@@ -1,119 +1,173 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxon Healthcare | Empowering Health, Everywhere</title>
+  <style>
+    :root {
+      --main-color: #333;
+      --header-background: var(--main-color);
+      --header-color: #fff;
+      --nav-background: var(--main-color);
+      --nav-color: #fff;
+      --footer-background: var(--main-color);
+      --footer-color: #fff;
+      --button-background: var(--main-color);
+      --button-color: #fff;
+    }
 
-header {
-  background-color: #337ab7;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-header h1 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
+    header {
+      background-color: var(--header-background);
+      color: var(--header-color);
+      text-align: center;
+      padding: 20px;
+    }
 
-header h2 {
-  font-size: 1.2em;
-  margin-top: 0;
-}
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      background-color: var(--nav-background);
+    }
 
-nav {
-  background-color: #e8e8e8;
-  padding: 10px 0;
-}
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+    nav ul li a {
+      color: var(--nav-color);
+      text-decoration: none;
+    }
 
-nav li {
-  display: inline-block;
-  margin: 0 10px;
-}
+    main {
+      padding: 20px;
+    }
 
-nav li a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px 15px;
-}
+    section {
+      margin-bottom: 40px;
+    }
 
-nav li a:hover {
-  background-color: #ddd;
-}
+    h2 {
+      color: var(--main-color);
+    }
 
-main {
-  padding: 20px;
-}
+    form {
+      margin-top: 20px;
+    }
 
-section {
-  margin-bottom: 20px;
-}
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
 
-section h2 {
-  font-size: 1.5em;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
 
-section p {
-  line-height: 1.5;
-}
+    button {
+      padding: 10px 20px;
+      background-color: var(--button-background);
+      color: var(--button-color);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-section ul {
-  list-style: none;
-  padding: 0;
-}
+    footer {
+      background-color: var(--footer-background);
+      color: var(--footer-color);
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
 
-section li {
-  margin-bottom: 5px;
-}
+<header>
+  <img src="maxon-logo.png" alt="Maxon Healthcare Logo"> <h1>Maxon Healthcare</h1>
+  <h2>Empowering Health, Everywhere</h2>
+</header>
 
-section article {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 15px;
-}
+<nav>
+  <ul>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#team">Our Team</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
 
-section article h3 {
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
+<main>
+  <section id="about">
+    <h2>About Maxon Healthcare</h2>
+    <p>Write a compelling description about Maxon Healthcare, its mission, values, and what makes it unique.</p>
+  </section>
 
-#contact form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>Describe the healthcare services offered by Maxon Healthcare.</p>
+    <ul>
+      <li>Service 1</li>
+      <li>Service 2</li>
+      <li>Service 3</li>
+    </ul>
+  </section>
 
-#contact label {
-  margin-bottom: 5px;
-}
+  <section id="team">
+    <h2>Meet Our Team</h2>
+    <p>Introduce the team members of Maxon Healthcare and their qualifications.</p>
+    <article>
+      <h3>Dr. Jane Smith</h3>
+      <p>Title and brief description of Dr. Smith's expertise.</p>
+    </article>
+  </section>
 
-#contact input, #contact textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  width: 100%;
-}
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Provide contact information for Maxon Healthcare, including address, phone number, and email address.</p>
+    <form action="mailto:info@maxonhealthcare.com" method="post" enctype="text/plain">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
 
-#contact button {
-  background-color: #337ab7;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-}
+<footer>
+  <p>&copy; Maxon Healthcare 2024</p>
+</footer>
 
-footer {
-  background-color: #337ab7;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
+<script>
+  // JavaScript to change CSS variables dynamically
+  const themeToggle = document.querySelector('#theme-toggle');
+
+  themeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-theme');
+  });
+</script>
+
+</body>
+</html>
