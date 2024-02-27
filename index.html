@@ -10,25 +10,30 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            /* Set the background image as a watermark */
+            background-image: url('maxon logo.PNG');
+            background-repeat: repeat;
         }
         header {
             background-color: #007bff;
             padding: 10px 0;
             text-align: center;
+            /* Fill the header with the logo */
+            background-image: url('maxon healthcare.PNG');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
         }
-        header img {
-            max-width: 200px;
-        }
-        nav ul {
+        header nav ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-        nav ul li {
+        header nav ul li {
             display: inline;
             margin: 0 10px;
         }
-        nav ul li a {
+        header nav ul li a {
             color: #fff;
             text-decoration: none;
         }
@@ -36,7 +41,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8); /* Set the background color for better readability */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -81,8 +86,6 @@
 <body>
 
 <header>
-    <img src="maxon healthcare.PNG" alt="Maxon Healthcare Logo" width="300" height="200">
-    <p style="background-image: url('maxon logo.PNG');">
     <nav>
         <ul>
             <li><a href="#services">Services</a></li>
@@ -112,12 +115,12 @@
         <p>Maxon Healthcare is a leading provider of comprehensive medical services, specializing in onsite healthcare solutions across India. With a focus on empowering communities, we conduct medical camps nationwide, offering advanced radiology and laboratory services. Our experienced team ensures quality care, serving over 100 national companies and acting as vendors for 200 healthcare facilities. Committed to accessibility and affordability, we prioritize preventive healthcare and collaborate with partners to make a meaningful impact on public health.</p>
     </section>
 
-    <section id="vendors" class="hidden">
+    <section id="vendors">
         <h2>Vendors</h2>
         <p>Vendor details go here...</p>
     </section>
 
-    <section id="clients" class="hidden">
+    <section id="clients">
         <h2>Our Clients</h2>
         <p>Client details go here...</p>
     </section>
