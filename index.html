@@ -3,55 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxon Healthcare Diagnostics Center</title>
+    <title>Maxon Healthcare - On-Site Medical Camps</title>
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Maxon Healthcare Diagnostics Center</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="order">
-        <h2>Place Your Order</h2>
-        <form action="/submit_order" method="post">
-            <label for="client_name">Your Name:</label><br>
-            <input type="text" id="client_name" name="client_name" required><br>
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="service">Select Service:</label><br>
-            <select id="service" name="service" required>
-                <option value="Blood Test">Blood Test</option>
-                <option value="X-ray">X-ray</option>
-                <option value="MRI">MRI</option>
-                <!-- Add more options as needed -->
-            </select><br>
-            <label for="additional_notes">Additional Notes:</label><br>
-            <textarea id="additional_notes" name="additional_notes"></textarea><br>
-            <button type="submit">Submit Order</button>
-        </form>
-    </section>
+<div class="container">
+    <h1>Maxon Healthcare - On-Site Medical Camps</h1>
+    <p>Maxon Healthcare specializes in providing comprehensive medical services through on-site medical camps across India.</p>
+    <p>Our On-Site Medical Camps Offer:</p>
+    <ul>
+        <li>Advanced radiology services</li>
+        <li>State-of-the-art laboratory facilities</li>
+        <li>Experienced medical professionals</li>
+        <li>Comprehensive health check-ups</li>
+        <li>Health education and awareness programs</li>
+    </ul>
+    <p>We are committed to:</p>
+    <ul>
+        <li>Empowering communities through accessible healthcare solutions</li>
+        <li>Promoting preventive healthcare measures</li>
+        <li>Collaborating with partners to make a meaningful impact on public health</li>
+    </ul>
+    <p>Contact us to schedule an on-site medical camp for your organization or community.</p>
+    <p>For inquiries, please email: info@maxonhealthcare.com</p>
+</div>
 
-    <section id="comments">
-        <h2>Client Comments and Ratings</h2>
-        <form action="/submit_comment" method="post">
-            <label for="comment">Your Comment:</label><br>
-            <textarea id="comment" name="comment" required></textarea><br>
-            <label for="rating">Rating (1-5):</label><br>
-            <input type="number" id="rating" name="rating" min="1" max="5" required><br>
-            <button type="submit">Submit</button>
-        </form>
-        <!-- Display comments and ratings here -->
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Maxon Healthcare Diagnostics Center. All rights reserved.</p>
-    </footer>
 </body>
 </html>
