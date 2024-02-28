@@ -15,14 +15,9 @@
             background-repeat: no-repeat;
         }
         header {
-            background-color: ;
-            padding: 40px 0;
-            text-align: left;
-            /* Fill the header with the logo */
-            background-image: url('maxon logo.PNG');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
+            background-color: #007bff;
+            padding: 20px;
+            text-align: center;
         }
         header nav ul {
             list-style: none;
@@ -39,9 +34,9 @@
         }
         main {
             max-width: 800px;
-            margin: 10px;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.8); /* Set the background color for better readability */
+            margin: 10px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -80,6 +75,21 @@
             margin-top: 20px;
             padding: 10px 0;
             background-color: #f0f0f0;
+        }
+
+        /* Responsive CSS */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            main {
+                margin: 10px;
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -155,16 +165,4 @@
         window.open(whatsappURL, '_blank');
     });
 
-    document.getElementById("showVendors").addEventListener("click", function(event) {
-        event.preventDefault();
-        document.getElementById("vendors").classList.toggle("hidden");
-    });
-
-    document.getElementById("showClients").addEventListener("click", function(event) {
-        event.preventDefault();
-        document.getElementById("clients").classList.toggle("hidden");
-    });
-</script>
-
-</body>
-</html>
+    document.getElementById
