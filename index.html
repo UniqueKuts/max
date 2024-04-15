@@ -5,175 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxon Healthcare</title>
     <style>
+        /* Basic CSS for navbar */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f2f5;
-            color: #1c1e21;
-        }
-        header {
-            background-color: #3b5998;
+            margin: 10px;
             padding: 10px;
-            text-align: center;
-            color: #fff;
+            background-color:powderblue;
         }
-        header nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        nav {
+            background-color: powderblue;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between; /* Align items to the left and right */
+            align-items: center; /* Center items vertically */
+            padding: 5px; /* Add some padding to prevent logo from touching edges */
+            position: fixed; /* Fix the navbar position */
+            top: 0; /* Position it at the top of the viewport */
+            width: 95%; /* Make it full width */
+            z-index: 1000; /* Ensure it appears above other content */
         }
-        header nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        header nav ul li a {
-            color: #fff;
+        nav a {
+            color: rgb(4, 24, 54);
             text-decoration: none;
+            padding: 5px 10px;
         }
-        main {
-            max-width: 800px;
-            margin: 10px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        nav a:hover {
+            background-color: #4285a171;
+            color: rgb(0, 0, 0);
         }
-        section {
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: #333;
-        }
-        label {
-            font-weight: bold;
-        }
-        textarea,
-        input[type="text"],
-        input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
+        img {
+            height: 90px;  /* Adjust the height of the logo */
+            align-items: right;
         }
         footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px 0;
-            background-color: #f0f2f5;
-        }
-
-        /* Responsive CSS */
-        @media screen and (max-width: 768px) {
-            header {
-                padding: 10px;
-            }
-            header nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
-            main {
-                margin: 10px;
-                padding: 10px;
-            }
+            background-color: powderblue;
+            color: rgba(0, 0, 0, 0.966);
+            text-align: right;
+            padding: 1px;
+            position: bottom;
+            bottom: 50;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-
-<header>
     <nav>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#" id="showVendors">Vendors</a></li>
-            <li><a href="#" id="showClients">Our Clients</a></li>
-        </ul>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div>
+            <img src="MAXON LOGO.png" alt="Maxon Healthcare Logo">
+        </div>
     </nav>
-</header>
+    
+    <!-- Your content goes here -->
+    <div id="home">
+        <h1>Welcome to Maxon Healthcare</h1>
+        <P>
+            "Maxon Healthcare is a leading provider of comprehensive medical services, specializing in onsite healthcare solutions across India. With a focus on empowering communities,
+             we conduct medical camps nationwide,
+             offering advanced radiology and laboratory services. 
+             Our experienced team ensures quality care, serving over 100 national companies and acting as vendors for 200 healthcare facilities
+             . Committed to accessibility and affordability, we prioritize preventive healthcare and collaborate with partners to make a meaningful impact on public health."</P>
+        
+        
+        <!-- Home content goes here -->
+    </div>
 
-<main>
-    <section id="services">
+    <div id="services">
         <h2>Our Services</h2>
-        <p>Maxon Healthcare specializes in providing comprehensive medical services through on-site medical camps across India. Our services include:</p>
-        <ul>
-            <li>Advanced radiology services</li>
-            <li>State-of-the-art laboratory facilities</li>
-            <li>Experienced medical professionals</li>
-            <li>Comprehensive health check-ups</li>
-            <li>Health education and awareness programs</li>
-        </ul>
-    </section>
+        <h2> Onsite Medical Camps:</h2>
+            <p> camps nationwide for convenient healthcare access.
+            Specializing in radiology and laboratory services.</p>
+        <h3> Comprehensive Care:</h3>
+            <p>Offering general check-ups, specialist consultations, and emergency care.</p>
+            
+        <h3> Facilities:</h3>
+            <p>Equipped with cutting-edge radiology and laboratory equipment.</p>
+        <h3>Qualified Team:</h3>    
+            <p>Staffed by experienced doctors, technicians, and support personnel.</p>
+        <h3>Nationwide Reach:</h3>   
+            <p>Serving diverse communities across urban and rural areas.</p>
+        <h3>Customized Solutions:</h3>
+            <p>Tailoring services to meet client needs and demographics.</p>
+        <h3>Affordable and Accessible:</h3>
+            <p>Providing cost-effective healthcare solutions for all.</p>
+        <h3>Focus on Prevention:</h3> 
+            <p>Promoting health education and preventive measures during camps.</p>
+            
+        <!-- Services content goes here -->
+    </div>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Maxon Healthcare is a leading provider of comprehensive medical services, specializing in onsite healthcare solutions across India. With a focus on empowering communities, we conduct medical camps nationwide, offering advanced radiology and laboratory services. Our experienced team ensures quality care, serving over 100 national companies and acting as vendors for 200 healthcare facilities. Committed to accessibility and affordability, we prioritize preventive healthcare and collaborate with partners to make a meaningful impact on public health.</p>
-    </section>
-
-    <section id="vendors">
-        <h2>Vendors</h2>
-        <p>Vendor details go here...</p>
-    </section>
-
-    <section id="clients">
-        <h2>Our Clients</h2>
-        <p>Client details go here...</p>
-    </section>
-
-    <section id="contact">
+    <div id="contact">
         <h2>Contact Us</h2>
-        <p>For inquiries and appointments, please fill out the form below:</p>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-</main>
-
-<footer>
+        <p>Johnbabu G</p>
+        <p>Zonal manager</p>
+        <p>+91 9866279831</p>
+        <p>johnbabu@maxonhealth.in</p>
+        
+        <!-- Contact content goes here -->
+    </div>
+    <footer>
     <p>&copy; 2024 Maxon Healthcare. All rights reserved.</p>
-</footer>
+    </footer>
 
-<script>
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
-        var whatsappMessage = "Name: " + name + "%0AEmail: " + email + "%0AMessage: " + message;
-        var whatsappURL = "https://api.whatsapp.com/send?phone=+918790289947&text=" + encodeURIComponent(whatsappMessage);
-        window.open(whatsappURL, '_blank');
-    });
-
-    document.getElementById("showVendors").addEventListener("click", function(event) {
-        event.preventDefault();
-        document.getElementById("vendors").classList.toggle("hidden");
-    });
-
-    document.getElementById("showClients").addEventListener("click", function(event) {
-        event.preventDefault();
-        document.getElementById("clients").classList.toggle("hidden");
-    });
-</script>
 
 </body>
 </html>
